@@ -26,6 +26,3 @@ class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = "__all__"
-
-    def get_post(self, obj):
-        return obj.post.pk
